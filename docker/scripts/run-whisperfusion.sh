@@ -9,7 +9,7 @@ cd /root/scratch-space/
 cd /root/WhisperFusion
 if [ "$1" != "mistral" ]; then
   exec python3 main.py --phi \
-                  --whisper_tensorrt_path /root/scratch-space/models/whisper_small_en \
+                  --whisper_tensorrt_path /root/scratch-space/models/tensorrt_whisper_nepali \
                   --phi_tensorrt_path /root/scratch-space/models/dolphin-2_6-phi-2 \
                   --phi_tokenizer_path /root/scratch-space/models/dolphin-2_6-phi-2/tokenizer
 else

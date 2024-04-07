@@ -1,5 +1,5 @@
-let websocket_uri = 'ws://' + window.location.host + '/transcription';
-let websocket_audio_uri = 'ws://' + window.location.host + '/audio';
+let websocket_uri = 'ws://localhost:8016';
+let websocket_audio_uri = 'ws://localhost:8017';
 
 let bufferSize = 4096,
     AudioContext,

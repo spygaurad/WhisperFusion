@@ -15,8 +15,8 @@ services:
     environment:
       VERBOSE: ${VERBOSE:-false}
     ports:
-      - "8017:8888"
       - "8016:6006"
+      - "8017:8888"
     deploy:
       resources:
         reservations:
@@ -36,3 +36,7 @@ services:
     depends_on:
       - whisperfusion
     entrypoint: ["/bin/bash", "/start-nginx.sh"]
+
+
+
+#~/wiseyak/suraj/WhisperFusion/examples/chatbot/html$ python -m http.server 8018

@@ -9,7 +9,7 @@ import ctypes
 
 from multiprocessing import Process, Manager, Value, Queue
 
-from whisper_live.server import TranscriptionServer
+from whisper_live.trt_server import TranscriptionServer
 from llm_service import TensorRTLLMEngine
 from tts_service import WhisperSpeechTTS
 
